@@ -1,4 +1,4 @@
-# hp-route
+# harry-potter-app
 
 ## Project setup
 ```
