@@ -2,11 +2,17 @@
   <div id="app">
     <h1>Witaj</h1>
     <ul>
-      <li><router-link to="/">Moje Filmy</router-link></li>
-      <li><router-link to="/onas">Lista filmów</router-link></li>
-      <li><router-link to="/dodaj">Dodaj film</router-link></li>
+      <li>
+        <router-link to="/">Moje Filmy</router-link>
+      </li>
+      <li>
+        <router-link to="/onas" :key="app">Lista filmów</router-link>
+      </li>
+      <li>
+        <router-link to="/dodaj">Dodaj film</router-link>
+      </li>
     </ul>
-    <router-view></router-view>
+    <router-view>:key="$route.fullPath"</router-view>
   </div>
 </template>
 
