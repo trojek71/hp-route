@@ -33,8 +33,8 @@ export default {
         mutation: DEL_MOVIE,
         variables: {
           title
-        },
-        refetchQueries: ["getMovies"]
+        }
+        // refetchQueries: ["getMovies"]
       });
     }
   }

@@ -6,7 +6,7 @@
         <router-link to="/">Moje Filmy</router-link>
       </li>
       <li>
-        <router-link to="/onas" :key="app">Lista filmów</router-link>
+        <router-link to="/onas">Lista filmów</router-link>
       </li>
       <li>
         <router-link to="/dodaj">Dodaj film</router-link>
