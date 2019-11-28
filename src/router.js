@@ -8,7 +8,7 @@ const router = new VueRouter({
     { path: "/", component: HelloWorld },
     { path: "/onas", component: MoviesList },
     { path: "/dodaj", component: AddMovie },
-    {path: "/kasuj",component:DeleteMovie},
+    { path: "/kasuj", component: DeleteMovie }
   ]
 });
 export default router;

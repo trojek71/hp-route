@@ -23,7 +23,7 @@
 //import MoviesList from "./components/MoviesList.vue";
 //import AddMovie from "./components/AddMovie.vue";
 export default {
-  name: "App"
+  name: "app"
 };
 </script>
 
