@@ -11,8 +11,11 @@
       <li>
         <router-link to="/dodaj">Dodaj film</router-link>
       </li>
+      <li>
+        <router-link to="/kasuj">Kasuj film</router-link>
+      </li>
     </ul>
-    <router-view>:key="$route.fullPath"</router-view>
+    <router-view :key="$route.fullPath"></router-view>
   </div>
 </template>
 

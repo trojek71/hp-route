@@ -9,6 +9,9 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 import VueRouter from "vue-router";
 import VueApollo, { ApolloProvider } from "vue-apollo";
 import router from "./router";
+import VueMaterial from "vue-material";
+import "vue-material/dist/vue-material.min.css";
+
 Vue.config.productionTip = false;
 
 const httpLink = new HttpLink({
@@ -23,6 +26,7 @@ const apolloClient = new ApolloClient({
 
 Vue.use(VueApollo);
 Vue.use(VueRouter);
+Vue.use(VueMaterial);
 
 const apolloProvider = new VueApollo({
   defaultClient: apolloClient
