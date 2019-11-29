@@ -1,21 +1,34 @@
 <template>
-  <div id="app">
-    <h1>Witaj</h1>
-    <ul>
-      <li>
-        <router-link to="/">Moje Filmy</router-link>
-      </li>
-      <li>
-        <router-link to="/onas">Lista filmów</router-link>
-      </li>
-      <li>
-        <router-link to="/dodaj">Dodaj film</router-link>
-      </li>
-      <li>
-        <router-link to="/kasuj">Kasuj film</router-link>
-      </li>
-    </ul>
-    <router-view :key="$route.fullPath"></router-view>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col bg-dark text-white">
+        <a class="navbar-brand">Portal z filmami</a>
+      </div>
+    </div>
+    <div id="app">
+      <div class="row">
+        <div class="col-3 bg-info p-2">
+          <ul>
+            <li>
+              <router-link to="/">Moje Filmy</router-link>
+            </li>
+            <li>
+              <router-link to="/onas">Lista filmów</router-link>
+            </li>
+            <li>
+              <router-link to="/dodaj">Dodaj film</router-link>
+            </li>
+            <li>
+              <router-link to="/kasuj">Kasuj film</router-link>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-9 bg-info p-2">
+          <router-view :key="$route.fullPath"></router-view>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

@@ -11,6 +11,8 @@ import VueApollo, { ApolloProvider } from "vue-apollo";
 import router from "./router";
 import VueMaterial from "vue-material";
 import "vue-material/dist/vue-material.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+//import "font-awesome/css/font-awesome.min.css";
 
 Vue.config.productionTip = false;
 
